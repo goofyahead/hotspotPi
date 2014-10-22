@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Config your PI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Please fill in your info!</h1>
+				<form role="form" action="/config" method="post">
+					<div class="form-group">
+						<label for="ssid">Network SSID:</label>
+						<input type="text" name="ssid" class="form-control" id="ssid">
+					</div>
+					<div class="form-group">
+						<label for="pass">Network password</label>
+						<input type="text" name="pass" class="form-control" id="pass">
+					</div>
+					<div class="form-group">
+						<label for="host">Host address</label>
+						<input type="text" name="host" class="form-control" id="host">
+					</div>
+					<div class="form-group">
+						<label for="username">User name</label>
+						<input type="text" name="username" class="form-control" id="username">
+					</div>
+					<div class="form-group">
+						<label for="userpass">User password</label>
+						<input type="text" name="userpass" class="form-control" id="userpass">
+					</div>
+					<input type="submit" value="Submit" class="btn btn-success">
+				</form>
+			</div>
+		</div>
+
+	</div>	
+</body>
+</html>
